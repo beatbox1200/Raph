@@ -1,3 +1,4 @@
+import os
 import discord
 from discord.ext import commands
 from discord.ext.commands import Bot
@@ -47,4 +48,4 @@ async def hey(ctx):
 async def bye(ctx):
     await bot.say(":triumph: Bye. See you later... I guess. :triumph:")
 
-bot.run("NDI2MTU3MTAxNDAwODUwNDQz.DZbSpQ.N7SQMyhzdeEMZcox4-ti_-TqGRk")
+bot.run(os.getenv('TOKEN'))
